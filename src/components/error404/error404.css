@@ -1,0 +1,20 @@
+.error404 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+}
+
+.error {
+  font-weight: bold;
+  font-size: 288px;
+  line-height: 142.6%;
+  margin: 50px auto 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.error_sub {
+  margin-bottom: 50px;
+}
