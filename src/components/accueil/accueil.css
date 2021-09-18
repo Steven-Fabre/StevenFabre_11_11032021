@@ -1,9 +1,47 @@
-.section1 {
+.accueil {
+  display: flex;
+  flex-direction: column;
+}
+
+.section1_container {
+  position: relative;
+  margin: 40px 0;
+}
+
+.figcaption {
+  position: absolute;
+  z-index: 5;
+  width: 820px;
+  left: 50%;
+  margin-left: -320px;
+  top: 45%;
+  bottom: 69.04%;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 142.6%;
+  /* or 68px */
+
+  display: flex;
+  align-items: flex-end;
+
+  color: #ffffff;
+}
+
+.figcaption_background {
+  width: 1240px;
+  height: 223px;
+  margin: auto;
+  max-width: 90%;
+  background-color: #000000;
+  filter: brightness(70%);
   border-radius: 25px;
-  margin: 20px 0;
+
+  background: url("../../img/index_landscape.png");
+  object-fit: cover;
 }
 
 .gallery {
+  position: sticky;
   background: #f7f7f7;
   border-radius: 25px;
   width: 100%;
@@ -12,4 +50,51 @@
 .card {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
   border-radius: 10px;
+}
+
+.card_description {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+  /* or 26px */
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  z-index: 99;
+  top: 75%;
+  left: 20px;
+  right: 20px;
+}
+
+.card_container {
+  margin: auto;
+  position: relative;
+  width: 340px;
+  height: 340px;
+}
+
+.card_container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  border-radius: 10px;
+  z-index: 40;
+  border-radius: 10px;
+}
+
+.cover {
+  width: 340px;
+  height: 340px;
+  object-fit: cover;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.gallery_grid {
+  padding: 50px;
+  gap: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }

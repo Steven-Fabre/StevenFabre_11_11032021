@@ -5,9 +5,9 @@
   justify-content: space-between;
 }
 
-.logo {
+.header_logo {
   width: 210px;
-  height: 68px;
+  height: 70px;
 }
 
 .navbar {

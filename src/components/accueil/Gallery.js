@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import Cards from "./Cards";
+import Accommodations from "../accommodation/Accommodations";
 
 export default class Logo extends Component {
   render() {
     return (
       <div className="gallery">
-        <Cards />
+        <Accommodations />
       </div>
     );
   }

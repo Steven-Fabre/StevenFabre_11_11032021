@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./accommodation.css";
+import Accommodations from "./Accommodations";
 
 export default class Accommodation extends Component {
   state = {};

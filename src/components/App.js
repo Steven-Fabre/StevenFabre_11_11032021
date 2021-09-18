@@ -1,6 +1,7 @@
 import "./App.css";
 import React from "react";
 import Header from "./header/Header";
+import Footer from "./footer/Footer";
 import Accueil from "./accueil/Accueil.js";
 import Accommodation from "./accommodation/Accommodation";
 import About from "./about/About";
@@ -12,13 +13,16 @@ class App extends React.Component {
     return (
       <div className="App">
         <Router>
-          <Header />
-          <Switch>
-            <Route path="/" exact component={Accueil} />
-            <Route path="/accommodation" component={Accommodation} />
-            <Route path="/about" component={About} />
-            <Route path="/" component={Error404} />
-          </Switch>
+          <div className="main-container">
+            <Header />
+            <Switch>
+              <Route path="/" exact component={Accueil} />
+              <Route path="/accommodation" component={Accommodation} />
+              <Route path="/about" component={About} />
+              <Route path="/" component={Error404} />
+            </Switch>
+          </div>
+          <Footer />
         </Router>
       </div>
     );

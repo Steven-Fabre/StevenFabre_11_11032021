@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Logo from "./Logo";
+import { ReactComponent as Logo } from "../../img/logo.svg";
 import { NavLink } from "react-router-dom";
 import "./header.css";
 
@@ -8,7 +8,7 @@ export default class Header extends Component {
     return (
       <div className="header">
         <NavLink to="/">
-          <Logo />
+          <Logo fill="#ff6060" className="header_logo" />
         </NavLink>
         <ul className="navbar">
           <NavLink exact activeClassName="current" className="nav-btn" to="/">

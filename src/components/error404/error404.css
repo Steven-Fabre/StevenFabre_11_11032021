@@ -3,6 +3,7 @@
   flex-direction: column;
   width: 100%;
   margin: auto;
+  align-items: center;
 }
 
 .error {
@@ -17,4 +18,8 @@
 
 .error_sub {
   margin-bottom: 50px;
+}
+
+#backToHome {
+  margin: 40px 0;
 }

@@ -9,7 +9,9 @@ export default class Error404 extends Component {
         <h1 className="error">404</h1>
         <h2 className="error_sub">Oups! La page que vous demandez n'existe pas.</h2>
 
-        <NavLink to="/">Retourner sur la page d’accueil</NavLink>
+        <NavLink id="backToHome" to="/">
+          Retourner sur la page d’accueil
+        </NavLink>
       </div>
     );
   }

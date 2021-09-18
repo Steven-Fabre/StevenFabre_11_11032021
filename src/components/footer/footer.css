@@ -1,0 +1,20 @@
+.copyright {
+  color: white;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  height: 210px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer_logo {
+  width: 122px;
+  height: 40px;
+}

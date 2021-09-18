@@ -6,13 +6,15 @@ export default class Cards extends Component {
     return (
       <Link
         to={{
-          pathname: "/accommodation",
+          pathname: `/accommodation&id=${this.props.accommodation.id}`,
           state: {
-            id: 1,
+            key: this.props.accommodation.id,
           },
         }}
+        className="card_container"
       >
-        Maison 1
+        <img className="cover" alt={this.props.accommodation.description} src={this.props.accommodation.cover}></img>
+        <p className="card_description">{this.props.accommodation.title}</p>
       </Link>
     );
   }

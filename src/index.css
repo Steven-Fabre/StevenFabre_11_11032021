@@ -1,8 +1,8 @@
-body {
-  width: 90%;
-  margin: auto;
-}
 * {
   font-family: "Montserrat", sans-serif;
   color: #ff6060;
+}
+
+body {
+  margin: 0;
 }
