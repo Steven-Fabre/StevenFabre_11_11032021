@@ -70,7 +70,8 @@
 .card_container {
   margin: auto;
   position: relative;
-  width: 340px;
+  min-width: 340px;
+  width: 100%;
   height: 340px;
 }
 
@@ -85,16 +86,27 @@
 }
 
 .cover {
-  width: 340px;
+  min-width: 340px;
+  width: 100%;
   height: 340px;
   object-fit: cover;
   margin: auto;
   border-radius: 10px;
 }
 
+.card_container:hover > .cover {
+  transition: all 0.5s;
+  filter: brightness(0.8);
+}
+.card_container:hover {
+  transition: all 0.5s;
+  transform: scale(0.9);
+}
+
 .gallery_grid {
   padding: 50px;
   gap: 60px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fill, minmax(340px, auto));
 }
