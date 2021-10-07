@@ -6,8 +6,10 @@ export default class Cards extends Component {
     return (
       <Link
         to={{
-          pathname: `/accommodation&id=${this.props.accommodation.id}`,
+          pathname: `/accommodation/#${this.props.accommodation.id}`,
           state: {
+            accommodation: this.props.accommodation,
+            accommodations: this.props.accommodations,
             key: this.props.accommodation.id,
           },
         }}

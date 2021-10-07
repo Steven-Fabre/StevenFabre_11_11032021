@@ -28,7 +28,11 @@ export default class Accommodations extends React.Component {
   render() {
     return (
       <div className="gallery_grid">
-        {this.state.data ? this.state.data.map((housing) => <Card accommodation={housing} key={housing.id} />) : ""}
+        {this.state.data
+          ? this.state.data.map((housing) => (
+              <Card accommodations={this.state.data} accommodation={housing} key={housing.id} />
+            ))
+          : ""}
       </div>
     );
   }

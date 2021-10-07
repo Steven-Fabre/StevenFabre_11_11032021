@@ -1,3 +1,5 @@
+//Dropdown for informations
+
 import React, { Component } from "react";
 import "./dropdown.css";
 import arrow from "../../img/arrow.svg";
@@ -15,7 +17,7 @@ export default class Dropdown extends Component {
         <object className="dropdown_arrow dropdown_arrow_hidden" type="image/svg+xml" data={arrow} alt="dropdown_arrow">
           {"Your browser does not support SVG "}
         </object>
-        <p className="dropdown_description dropdown_hidden">{this.props.description}</p>
+        <p className={this.props.className + " dropdown_hidden"}>{this.props.description}</p>
       </div>
     );
   }
