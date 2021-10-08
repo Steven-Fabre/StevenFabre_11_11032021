@@ -11,7 +11,7 @@ export default class Header extends Component {
           <Logo fill="#ff6060" className="header_logo" />
         </NavLink>
         <ul className="navbar">
-          <NavLink exact activeClassName="current" className="nav-btn" to="/">
+          <NavLink exact activeClassName="current" className="nav-btn " to="/">
             <li className="nav-li">Accueil</li>
           </NavLink>
           <NavLink exact activeClassName="current" className="nav-btn" to="/about">

@@ -14,8 +14,10 @@ export default class Cards extends Component {
           },
         }}
         className="card_container"
+        style={{
+          backgroundImage: `url(${this.props.accommodation.cover})`,
+        }}
       >
-        <img className="cover" alt={this.props.accommodation.description} src={this.props.accommodation.cover}></img>
         <p className="card_description">{this.props.accommodation.title}</p>
       </Link>
     );

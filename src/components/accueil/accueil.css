@@ -11,31 +11,31 @@
 .figcaption {
   position: absolute;
   z-index: 5;
-  width: 820px;
-  left: 50%;
-  margin-left: -320px;
-  top: 45%;
-  bottom: 69.04%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0%;
+  align-items: center;
+  width: 60%;
+  height: 223px;
+  margin: auto;
   font-weight: 500;
   font-size: 44px;
   line-height: 142.6%;
-  /* or 68px */
-
   display: flex;
-  align-items: flex-end;
 
   color: #ffffff;
 }
 
 .figcaption_background {
-  width: 1240px;
+  width: 100%;
   height: 223px;
   margin: auto;
   max-width: 90%;
   background-color: #000000;
   filter: brightness(70%);
   border-radius: 25px;
-
+  background-position: center;
   background: url("../../img/index_landscape.png");
   object-fit: cover;
 }
@@ -62,36 +62,23 @@
   align-items: flex-end;
   position: absolute;
   z-index: 99;
-  top: 75%;
+  bottom: 5%;
   left: 20px;
   right: 20px;
 }
 
 .card_container {
+  z-index: 100;
   margin: auto;
   position: relative;
   min-width: 340px;
   width: 100%;
   height: 340px;
-}
-
-.card_container::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  margin: 20px;
+  background-size: cover;
+  background-position: center;
   border-radius: 10px;
-  z-index: 40;
-  border-radius: 10px;
-}
-
-.cover {
-  min-width: 340px;
-  width: 100%;
-  height: 340px;
-  object-fit: cover;
-  margin: auto;
-  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
 }
 
 .card_container:hover > .cover {
@@ -104,9 +91,36 @@
 }
 
 .gallery_grid {
-  padding: 50px;
   gap: 60px;
   display: grid;
   flex-wrap: wrap;
   grid-template-columns: repeat(auto-fill, minmax(340px, auto));
+}
+
+@media screen and (max-width: 375px) {
+  .figcaption {
+    font-size: 24px;
+    height: 111px;
+    width: 218px;
+    align-items: center;
+    margin: auto;
+  }
+
+  .figcaption_background {
+    margin: 0;
+    max-width: 100%;
+    max-height: 111px;
+  }
+  .section1_container {
+    margin: 0;
+  }
+
+  .gallery_grid {
+    gap: 0;
+  }
+
+  .card_container {
+    margin: 20px 0;
+    height: 255px;
+  }
 }

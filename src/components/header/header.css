@@ -38,3 +38,21 @@
   text-decoration-line: underline;
   color: rgba(255, 96, 96, 1);
 }
+
+@media screen and (max-width: 375px) {
+  .header {
+    margin: 20px 0;
+  }
+  .header_logo {
+    width: auto;
+    height: 43px;
+  }
+
+  .navbar {
+    padding: 0;
+  }
+
+  .nav-li {
+    font-size: 12px;
+  }
+}
