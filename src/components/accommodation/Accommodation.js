@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import Rating from "./Rating";
+import Profil from "./Profil";
 import Dropdown from "../dropdown/Dropdown";
 import "./accommodation.css";
-import Carousel from "../Carousel/Carousel";
+import Carousel from "../carousel/Carousel";
 import Error404 from "../error404/Error404";
 
 export default class Accommodation extends Component {
@@ -51,17 +51,7 @@ export default class Accommodation extends Component {
                   : ""}
               </div>
             </div>
-            <div className="accommodation_profil">
-              <div className="accommodation_profil_host">
-                <p className="accommodation_profil_host_name">{housing.host.name}</p>
-                <img
-                  className="accommodation_profil_host_pic"
-                  src={housing.host.picture}
-                  alt={"Photo de " + housing.host.name}
-                ></img>
-              </div>
-              <Rating rating={housing.rating} key={housing.id} />
-            </div>
+            <Profil housing={housing} />
           </div>
           <div className="accommodation_dropdowns">
             <Dropdown title="Description" description={housing.description} className="dropdown_accommodation" />
