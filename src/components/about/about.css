@@ -3,11 +3,10 @@
   height: 223px;
   margin: 40px auto;
   max-width: 90%;
-  background-color: #000000;
   filter: brightness(70%);
   border-radius: 25px;
-
   background: url("../../img/about_moutain.png");
+  background-position: center;
 }
 
 .about {

@@ -13,7 +13,7 @@ export default class Carousel extends Component {
       length: this.props.pictures.length,
     };
   }
-
+  // On each image i have an attached key who is the index, and the buttons will iterate between the array of images
   nextSlide() {
     this.setState(() => {
       if (this.state.count === this.state.length - 1) {
@@ -38,7 +38,10 @@ export default class Carousel extends Component {
         <button onClick={() => this.prevSlide()} className="left_arrow"></button>
         {this.props.pictures.map((picture, index) => {
           return (
-            <div key={index}>{index === this.state.count && <img className="picture" src={picture} alt="" />}</div>
+            // Avoid useless DIV with React.Fragment
+            <React.Fragment key={index}>
+              {index === this.state.count && <img className="picture" src={picture} alt="" />}{" "}
+            </React.Fragment>
           );
         })}
         <button onClick={() => this.nextSlide()} className="right_arrow"></button>
