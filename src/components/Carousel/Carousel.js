@@ -15,13 +15,11 @@ export default class Carousel extends Component {
   }
   // On each image i have an attached key who is the index, and the buttons will iterate between the array of images
   nextSlide() {
-    this.setState(() => {
-      if (this.state.count === this.state.length - 1) {
-        this.setState({ count: 0 });
-      } else {
-        this.setState({ count: this.state.count + 1 });
-      }
-    });
+    if (this.state.count === this.state.length - 1) {
+      this.setState({ count: 0 });
+    } else {
+      this.setState({ count: this.state.count + 1 });
+    }
   }
 
   prevSlide() {
