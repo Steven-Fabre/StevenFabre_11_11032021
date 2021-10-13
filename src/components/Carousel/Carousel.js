@@ -1,8 +1,7 @@
-//Carousel for pictures in accommodation
-
 import React, { Component } from "react";
 import "./carousel.css";
 
+//This component is rendering the Carousel for pictures in accommodation
 export default class Carousel extends Component {
   constructor(props) {
     super(props);

@@ -2,6 +2,7 @@ import "./accommodation.css";
 import React from "react";
 import Card from "../accueil/Card";
 
+// This component render all accomodations in Cards for the main page
 export default class Accommodations extends React.Component {
   constructor(props) {
     super(props);
@@ -27,12 +28,14 @@ export default class Accommodations extends React.Component {
 
   render() {
     return (
-      <div className="gallery_grid">
-        {this.state.data
-          ? this.state.data.map((housing) => (
-              <Card accommodations={this.state.data} accommodation={housing} key={housing.id} />
-            ))
-          : ""}
+      <div className="gallery">
+        <div className="gallery_grid">
+          {this.state.data
+            ? this.state.data.map((housing) => (
+                <Card accommodations={this.state.data} accommodation={housing} key={housing.id} />
+              ))
+            : ""}
+        </div>
       </div>
     );
   }

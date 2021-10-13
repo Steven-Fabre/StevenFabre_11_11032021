@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { ReactComponent as Star } from "../../img/star.svg";
 import "./accommodation.css";
 
+//This component is used by Profil.js for transforming the Rating data in stars
 export default class Rating extends Component {
   render() {
     let rating = [];

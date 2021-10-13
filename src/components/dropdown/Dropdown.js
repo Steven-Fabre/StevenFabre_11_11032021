@@ -1,9 +1,8 @@
-//Dropdown for informations
-
 import React, { Component } from "react";
 import "./dropdown.css";
 import arrow from "../../img/arrow.svg";
 
+//This component is a Dropdown factory, used in About page and Accommodation page
 export default class Dropdown extends Component {
   showDropdown(e) {
     e.target.closest("div").children[1].classList.toggle("dropdown_arrow_hidden");

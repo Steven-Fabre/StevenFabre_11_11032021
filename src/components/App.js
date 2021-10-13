@@ -8,6 +8,8 @@ import About from "./about/About";
 import Error404 from "./error404/Error404";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
+//This component show and make the routing the entire application
+
 class App extends React.Component {
   render() {
     return (

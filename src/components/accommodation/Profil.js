@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Rating from "./Rating";
 import "./accommodation.css";
 
+//This component render the profil of the host in the accommodation
 export default class Profil extends Component {
   render() {
     return (

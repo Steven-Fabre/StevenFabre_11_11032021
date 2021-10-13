@@ -3,6 +3,7 @@ import { ReactComponent as Logo } from "../../img/logo.svg";
 import { NavLink } from "react-router-dom";
 import "./footer.css";
 
+//This component render the footer of each page
 export default class Header extends Component {
   render() {
     return (

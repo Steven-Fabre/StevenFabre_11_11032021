@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./about.css";
 import Dropdown from "../dropdown/Dropdown";
 
+//This component is a View of the about page
 export default class About extends Component {
   render() {
     return (

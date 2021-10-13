@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import logo from "../img/logo.svg";
 
+//This component render the Kasa logo
 export default class Logo extends Component {
   render() {
     return (

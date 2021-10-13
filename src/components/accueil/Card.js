@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
+//This component is used by Accommodations.js for rendering each accommodation in cards
 export default class Cards extends Component {
   render() {
     return (
