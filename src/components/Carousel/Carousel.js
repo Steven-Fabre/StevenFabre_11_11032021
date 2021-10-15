@@ -32,7 +32,7 @@ export default class Carousel extends Component {
   render() {
     return (
       <div className="carousel_container">
-        <button onClick={() => this.prevSlide()} className="left_arrow"></button>
+        {this.state.length > 1 && <button onClick={() => this.prevSlide()} className="left_arrow"></button>}
         {this.props.pictures.map((picture, index) => {
           return (
             // Avoid useless DIV with React.Fragment
@@ -41,7 +41,7 @@ export default class Carousel extends Component {
             </React.Fragment>
           );
         })}
-        <button onClick={() => this.nextSlide()} className="right_arrow"></button>
+        {this.state.length > 1 && <button onClick={() => this.nextSlide()} className="right_arrow"></button>}
       </div>
     );
   }
